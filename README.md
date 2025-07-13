@@ -37,7 +37,8 @@ Below are the key columns included in the dataset:
 - **Order_Priority** – Priority level of the order (e.g., Low, Medium, High, Critical)
 ### Here is the overview of the dataset before cleaning 
 <img width="925" height="372" alt="sql" src="https://github.com/user-attachments/assets/33e130f3-0109-4522-b99c-104ab1e5db69" />
-### Here is the cleaned Dataset [Download here][https://github.com/Hola-yinka/DSA-PROJECT--KULTRA-MEGA-STORES-INVENTORY/commit/a204f38b8c8dc6776bb89de35ba80d8116d38f0b]
+### Here is the cleaned Dataset
+  -[https://github.com/Hola-yinka/DSA-PROJECT--KULTRA-MEGA-STORES-INVENTORY/commit/a204f38b8c8dc6776bb89de35ba80d8116d38f0b](Download here)
 
 ## 🛠️ Tools & Skills Used
 
