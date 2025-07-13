@@ -35,3 +35,24 @@ Below are the key columns included in the dataset:
 - **Shipping_Cost** – Cost incurred for shipping the order
 - **Ship_Mode** – Shipping method used (e.g., Express Air, Delivery Truck)
 - **Order_Priority** – Priority level of the order (e.g., Low, Medium, High, Critical)
+### Here is the overview of the dataset 
+<img width="925" height="372" alt="sql" src="https://github.com/user-attachments/assets/33e130f3-0109-4522-b99c-104ab1e5db69" />
+
+## 🛠️ Tools & Skills Used
+
+- [**Microsoft SQL Server (SSMS)**](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)  
+  Used for querying, filtering, and analyzing data with T-SQL
+
+- [**Excel**](https://www.microsoft.com/en-us/microsoft-365/excel)  
+  Used for initial data cleaning, formatting, and converting to CSV
+
+- **SQL (T-SQL)**  
+  Used for filtering, aggregation, joins, groupings, and business queries
+
+- **Business Intelligence (BI)**  
+  Applied to extract insights from transactional data and support decision-making
+
+- **Problem Solving & Interpretation**  
+  Translating business questions into technical solutions using SQL
+
+
