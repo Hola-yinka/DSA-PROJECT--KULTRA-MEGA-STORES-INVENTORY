@@ -233,6 +233,10 @@ ORDER BY
     Order_Priority, Ship_Mode;
 ~~~
 
+📁 You can view all SQL queries used in this analysis here:  
+👉 [[Uploading DSA_SQLQuery1.sql…]()
+]()
+
 
 ##  Insights & Recommendations
 
