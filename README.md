@@ -332,9 +332,9 @@ Overall, the analysis reveals actionable insights across customers, shipping, pr
 
 ##  Contact
 
--Created with by Olayinka Ogunmilade  
+- Created with by Olayinka Ogunmilade  
 - Email: Ogunmiladeolayinka122@gmail.com  
--[Connect with me on LinkedIn](https://www.linkedin.com/in/olayinka-ogunmilade/)
+- [Connect with me on LinkedIn](https://www.linkedin.com/in/olayinka-ogunmilade/)
 
 ## Acknowledgements
  ## The Incubator Hub 
