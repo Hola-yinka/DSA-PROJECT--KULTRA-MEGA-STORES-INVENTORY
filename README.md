@@ -11,7 +11,7 @@ You have been engaged as a **Business Intelligence Analyst** to support the oper
 
 The data was downloaded from **Canvas**, as provided by **DSA** (DigitalSkillUpAfrica) for the Business Intelligence project.
 
-## 🧾 Dataset Description
+##  Dataset Description
 
 The dataset contains historical order records from **Kultra Mega Stores – Abuja division** between **2009 and 2012**. Each row represents a single order transaction with various attributes describing the customer, product, sales details, and shipping.
 
@@ -37,10 +37,11 @@ Below are the key columns included in the dataset:
 - **Order_Priority** – Priority level of the order (e.g., Low, Medium, High, Critical)
 ### Here is the overview of the dataset before cleaning 
 <img width="925" height="372" alt="sql" src="https://github.com/user-attachments/assets/33e130f3-0109-4522-b99c-104ab1e5db69" />
-### Here is the cleaned Dataset
-  -[https://github.com/Hola-yinka/DSA-PROJECT--KULTRA-MEGA-STORES-INVENTORY/commit/a204f38b8c8dc6776bb89de35ba80d8116d38f0b](Download here)
 
-## 🛠️ Tools & Skills Used
+  ### Here is the cleaned dataset
+  - [**Download here**](https://github.com/Hola-yinka/DSA-PROJECT--KULTRA-MEGA-STORES-INVENTORY/commit/a204f38b8c8dc6776bb89de35ba80d8116d38f0b)
+
+##  Tools & Skills Used
 
 - [**Microsoft SQL Server (SSMS)**](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)  
   Used for querying, filtering, and analyzing data with T-SQL
@@ -57,7 +58,7 @@ Below are the key columns included in the dataset:
 - **Problem Solving & Interpretation**  
   Translating business questions into technical solutions using SQL
 
-  ## 📘 Business Analysis & SQL Solutions
+  ##  Business Analysis & SQL Solutions
 ### 1: Which product category had the highest total sales?
 - Selecting the top 1 product category with the highest sum of sales
 ~~~
@@ -87,7 +88,7 @@ ORDER BY
 ~~~
 
 ### 3: What is the total sales of 'Appliances' in the 'Ontario' province?
-- 🧮 Steps Taken:
+-  Steps Taken:
 1. We filter the dataset for rows where:
 2. Product_Category is 'Appliances'
 3.Province is 'Ontario'
@@ -104,7 +105,7 @@ WHERE
 ~~~
 
  ### 4: Who are the bottom 10 customers based on total sales?
- - 🧮 Steps Taken:
+ -  Steps Taken:
   1. Grouping by Customer_Name and summing their total sales
   2. Sorting in ascending order to get the lowest revenue customers
 ~~~
@@ -119,7 +120,7 @@ ORDER BY
     Total_Sales ASC;
 ~~~
 ### 5: Which shipping method incurred the highest total shipping cost?
-  - 🧮 Steps Taken:
+  -  Steps Taken:
    1. Grouping data by Ship_Mode
    2. Summing the Shipping_Cost for each method
    3. Sorting in descending order to see the most expensive on top
@@ -136,7 +137,7 @@ ORDER BY
     Total_Shipping_Cost DESC;
 ~~~
 
-### 6:Who are the top 5 most valuable customers by total sales?
+### 6: Who are the top 5 most valuable customers by total sales?
 ~~~
 SELECT TOP 5
     Customer_Name,
@@ -149,8 +150,8 @@ ORDER BY
     Total_Sales DESC;
 ~~~
 
-### 7:Which customer in the 'Small Business' segment generated the highest total sales?
-  - 🧮 Steps Taken:
+### 7: Which customer in the 'Small Business' segment generated the highest total sales?
+  -  Steps Taken:
 1. Filter only 'Small Business' customers
 2. Group by Customer_Name to calculate total sales
 3. Sort by total sales in descending order
@@ -171,7 +172,7 @@ ORDER BY
 ~~~
 
 ### 8: Which Corporate segment customer made the most orders between 2009 and 2012?
-   - 🧮 Steps Taken:
+   - Steps Taken:
    1. Filter customers in the 'Corporate' segment
    2. Filter orders between 2009 and 2012 using Order_Date
    3. Group by Customer_Name and count how many times each customer appears
@@ -192,8 +193,8 @@ ORDER BY
     Number_of_Orders DESC;
 ~~~
 
- ### 9:Who is the most profitable customer in the 'Consumer' segment?
-  - 🧮 Steps Taken:
+ ### 9: Who is the most profitable customer in the 'Consumer' segment?
+  -  Steps Taken:
   1. Filter customers in the 'Consumer' segment
   2. Group by Customer_Name
   3. Sum their total profit
@@ -212,8 +213,8 @@ ORDER BY
     Total_Profit DESC;
 ~~~
 
-### 10. Is the company using the correct shipping methods based on order priority?
-   - 🧮 Steps Taken:
+### 10: Is the company using the correct shipping methods based on order priority?
+   -  Steps Taken:
    1. Count how many orders used each shipping method by order priority  
    2. This helps spot any mismatch (e.g. High priority orders using slow or cheap shipping methods like Delivery Truck)
 
@@ -231,17 +232,99 @@ GROUP BY
 ORDER BY
     Order_Priority, Ship_Mode;
 ~~~
-## 🧠 Insights & Recommendations
 
-Based on the SQL analysis, here are some key insights:
 
-- **Office Supplies** generated the highest sales, but **Furniture** yielded higher profit margins.
-- **Western and Northern regions** performed better in terms of sales, while **South-East** lagged behind.
-- **High-priority orders** were sometimes shipped using slower or cheaper methods like *Delivery Truck*, which may affect customer satisfaction.
-- **The top 10 customers** significantly contributed to overall revenue — offering loyalty rewards could boost retention.
-- **The bottom 10 customers** spent the least — targeted marketing or bundle discounts may increase their order volume.
-- **Appliances in Ontario** showed lower sales compared to other categories, indicating room for promotion or improved distribution.
-- The most valuable customers typically ordered **high-volume office supplies** — KMS can upsell related products to them.
+##  Insights & Recommendations
 
-These findings can help KMS optimize product focus, improve shipping logistics, and maximize revenue from both top and low-performing customer groups.
+Based on the SQL analysis of Kultra Mega Stores' historical sales data (2009–2012), the following key insights and strategic recommendations were derived:
+
+### 1. Top-Selling Product Category
+- **Technology** emerged as the highest revenue-generating product category, contributing over ₦5.9M in sales.
+- These products are likely high-margin and in consistent demand, making them a strong strategic focus.
+
+**Recommendation:**  
+Expand marketing and bundle deals around technology products to boost cross-selling with related categories (e.g., office supplies).
+
+---
+
+### 2. Regional Sales Performance
+- **Top 3 regions by sales**: West, Ontario, and Prarie
+- **Bottom 3 regions**: Yukon, Northwest Territories, and Nunavut
+
+**Recommendation:**  
+- Target the bottom-performing regions with localized promotions and better inventory coverage.  
+- Consider regional sales reps or delivery partnerships to boost reach.
+
+---
+
+### 3. Appliances in Ontario
+- Appliances generated relatively low sales in Ontario.
+
+**Recommendation:**  
+Investigate product availability, pricing, and competitor presence in Ontario.  
+Promotions, discounts, or partnering with local distributors could improve sales.
+
+---
+
+### 4. Bottom 10 Customers
+- Bottom-tier customers spent less than ₦500 on average.
+
+**Recommendation:**  
+Create targeted campaigns, such as loyalty programs, bundled discounts, or referral bonuses to encourage more frequent purchases from these users.
+
+---
+
+### 5. Most Expensive Shipping Method
+- **Delivery Truck** accounted for the highest shipping cost across all methods.
+
+**Recommendation:**  
+Optimize delivery logistics — consider rerouting orders or offering Express Air as an incentive for high-priority customers to reduce cost overruns.
+
+---
+
+### 6. Most Valuable Customers
+- Top customers like **Emily Phan** and **Deborah Brumfield** generated ₦90k–₦117k in total sales.
+- Their purchases were mostly in **office supplies and technology**.
+
+**Recommendation:**  
+Reward these loyal customers with early product access or volume-based discounts to strengthen retention and revenue continuity.
+
+---
+
+### 7. Best Small Business Customer
+- **Dennis Kane** was the highest contributing small business customer, with ₦75k in sales.
+
+**Recommendation:**  
+Use his profile to identify similar business customers for segmentation and targeted B2B marketing.
+
+---
+
+### 8. Most Active Corporate Client
+- **Adam Hart** placed the most orders (27), indicating frequent business engagement.
+
+**Recommendation:**  
+Offer personalized account management and onboarding services to high-ordering corporate customers.
+
+---
+
+### 9. Most Profitable Consumer
+- **Emily Phan** was both the highest spender and the most profitable consumer.
+
+**Recommendation:**  
+Prioritize her and similar profiles in segmentation models. These customers likely respond well to premium offerings.
+
+---
+
+### 10. Shipping Method vs Order Priority
+- Analysis shows inconsistencies: **Critical and High priority** orders were sometimes fulfilled via **Delivery Truck** (the slowest method), while **Express Air** was underutilized.
+
+**Recommendation:**  
+Align shipping methods strictly with order priority.  
+Critical orders should default to Express Air, while Low/Not Specified can use more economical options.
+
+---
+
+Overall, the analysis reveals actionable insights across customers, shipping, products, and regions that can guide Kultra Mega Stores toward improved revenue, customer satisfaction, and operational efficiency.
+
+
 
