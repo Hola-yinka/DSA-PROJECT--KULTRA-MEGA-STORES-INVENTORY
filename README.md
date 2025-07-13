@@ -332,12 +332,12 @@ Overall, the analysis reveals actionable insights across customers, shipping, pr
 
 ##  Contact
 
-Created with by Olayinka Ogunmilade  
- Email: Ogunmiladeolayinka122@gmail.com  
-[Connect with me on LinkedIn](https://www.linkedin.com/in/olayinka-ogunmilade/)
+-Created with by Olayinka Ogunmilade  
+- Email: Ogunmiladeolayinka122@gmail.com  
+-[Connect with me on LinkedIn](https://www.linkedin.com/in/olayinka-ogunmilade/)
 
 ## Acknowledgements
-
+ ## The Incubator Hub 
 - Dataset provided by [DigitalSkillUpAfrica (DSA)](https://www.linkedin.com/company/theincubatorng/posts/)
 - Project completed as part of DSA's Data Analysis with SQL track
 
