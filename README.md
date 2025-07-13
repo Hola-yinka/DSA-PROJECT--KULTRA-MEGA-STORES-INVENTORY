@@ -234,7 +234,7 @@ ORDER BY
 ~~~
 
 ### You can view all SQL queries used in this analysis here:  
-   -[**View**](Uploading DSA_SQLQuery1.sql)
+   -[**View**](https://github.com/Hola-yinka/DSA-PROJECT--KULTRA-MEGA-STORES-INVENTORY/commit/f05a2f5c5fa3f8da6d83e3f913ecb079732f9bb2)
 
 
 ##  Insights & Recommendations
@@ -329,5 +329,16 @@ Critical orders should default to Express Air, while Low/Not Specified can use m
 
 Overall, the analysis reveals actionable insights across customers, shipping, products, and regions that can guide Kultra Mega Stores toward improved revenue, customer satisfaction, and operational efficiency.
 
+
+##  Contact
+
+Created with by Olayinka Ogunmilade  
+ Email: Ogunmiladeolayinka122@gmail.com  
+[Connect with me on LinkedIn](https://www.linkedin.com/in/olayinka-ogunmilade/)
+
+## Acknowledgements
+
+- Dataset provided by [DigitalSkillUpAfrica (DSA)](https://www.linkedin.com/company/theincubatorng/posts/)
+- Project completed as part of DSA's Data Analysis with SQL track
 
 
