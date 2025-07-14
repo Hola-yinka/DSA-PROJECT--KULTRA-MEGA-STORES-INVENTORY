@@ -212,8 +212,26 @@ GROUP BY
 ORDER BY
     Total_Profit DESC;
 ~~~
+### 10: Which customers returned items and what segment do they belong to?
+ -  Steps Taken:
+ 1. Join the KMS_Orders table with the ksm_Status table using Order_ID
+ 2. Filter for only rows where Status = 'Returned'
+ 3. Select Customer_Name and Customer_Segment
+ 4. Use DISTINCT to avoid duplicate entries
+~~~
+SELECT DISTINCT
+    o.Customer_Name,
+    o.Customer_Segment
+FROM
+    kms_orders AS o
+JOIN
+    ksm_Status AS os 
+    ON o.Order_ID = os.Order_ID
+WHERE
+    os.Status = 'Returned';
+~~~
 
-### 10: Is the company using the correct shipping methods based on order priority?
+### 11: Is the company using the correct shipping methods based on order priority?
    -  Steps Taken:
    1. Count how many orders used each shipping method by order priority  
    2. This helps spot any mismatch (e.g. High priority orders using slow or cheap shipping methods like Delivery Truck)
@@ -332,7 +350,7 @@ Overall, the analysis reveals actionable insights across customers, shipping, pr
 
 ##  Contact
 
-- Created with by Olayinka Ogunmilade  
+- Created  by Olayinka Ogunmilade  
 - Email: Ogunmiladeolayinka122@gmail.com  
 - [Connect with me on LinkedIn](https://www.linkedin.com/in/olayinka-ogunmilade/)
 
